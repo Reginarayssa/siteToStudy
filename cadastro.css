@@ -1,4 +1,4 @@
-@import url(style.css);
+@import url(cadastro.css);
 
 /*STYLE GERAL*/
 
@@ -99,7 +99,7 @@ html, body {
   }
   
   .signin a {
-    color: #ce076c;
+    color:pink;
   }
   
   .signin a:hover {
