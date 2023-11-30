@@ -1,0 +1,226 @@
+<html><head>
+	<title>Agenda</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  body{
+	font-family: monospace;
+	outline: none;
+	background-image: linear-gradient(
+    45deg,
+    #ED3A85,
+    #0B001A
+);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.navbar-inverse{
+	background-color: purple ;
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand{
+	color: #fff;
+	font-size: 30px;
+	margin-right: 40px;
+}
+
+#myNavbar .navbar-nav li a{
+	color: #fff;
+	font-size: 19px;
+	}
+#myNavbar #course{
+	transition: all 0.3s ease-in-out;
+}
+#myNavbar #course:hover{
+	background-color:#ED3A85; 
+
+}	
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#sub-dropdown-menu{
+display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  margin-left: 186px;
+  margin-top: -26px;
+
+}
+
+#sub-dropdown-menu a , .dropdown-menu a {
+	color: #000 !important;
+		font-size: 16px !important;
+}
+
+.dropdown:hover .dropdown-menu {display: block;transition: all 0.5s ease-in-out;}
+
+.dropdown .dropdown-menu a:hover{background-color: #c9c7c7;}
+
+
+#sub-dropdown:hover #sub-dropdown-menu {display: block;}
+
+
+</style>
+</head>
+
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">//ToStudy</a>
+    </div>
+    <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Inicio</a></li>
+        <li id="course" class="dropdown"><a href="#">Datas<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Individuais</a></li>
+          <li><a href="#">Colaborativas</a></li>
+          <li><a href="#">Todos os eventos</a></li>
+      </li>
+        </ul>
+      </li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Fale conosco</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="text-align: center;">
+    <h1 style="color:white">AGENDA</h1>
+            <label for="evento" style="color:white">Evento:</label>
+            <input type="text" id="evento" style="border-radius: 20px"> <br>
+            <label for="data" style="color:white";>Data:</label>
+            <input type="date" id="data" style="border-radius: 20px;">
+            <button onclick="adicionarEvento()" style="border-radius: 20px;">Adicionar</button>
+        </div>
+
+<script>
+    function adicionarEvento() {
+        var evento = document.getElementById("evento").value;
+        var data = document.getElementById("data").value;
+
+        if (evento && data) {
+            var listaEventos = document.getElementById("listaEventos");
+            var novoEvento = document.createElement("li");
+            novoEvento.innerHTML = evento + " em " + data;
+            listaEventos.appendChild(novoEvento);
+
+            document.getElementById("evento").value = "";
+            document.getElementById("data").value = "";
+        } else {
+            alert("Por favor, preencha todos os campos.");
+        }
+    }
+</script>
+
+<center>
+<table>
+    <style>
+        table {
+            color: white;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+            background-color: purple;
+        }
+        th {
+            background-color: purple;
+        }
+        td {
+            border: 1px solid red;
+        }
+    </style>
+    <h1 style="color:#fff";>Dezembro 2023</h1>
+    <thead>
+      <tr>
+        <th>Domingo</th>
+        <th>Segunda</th>
+        <th>Ter�a</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+        <th>Sabado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td style="background-color: blue;">7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</center>
+
+
+
+</body>
+</html>

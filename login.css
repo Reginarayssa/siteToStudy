@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+}
+
+.card-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 100px;
+    background: #f652a148;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login>h1 {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.input-wrapper {
+    width: 25vw;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    box-shadow: 0px 10px 40px #00000060;
+    box-sizing: border-box;
+    outline: none;
+    margin: 4px;
+}
+
+.input-wrapper>input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 12pt;
+    cursor: pointer;
+    width: 25vw;
+}
+
+.input-wrapper>input::placeholder {
+    color: #f0ffff94;
+}
+
+.input-wrapper input:focus-visible {
+    outline: none;
+}
+
+#btn-senha {
+    cursor: pointer;
+    font-size: 16pt;
+    position: relative;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: #F652A0;
+    color: white;
+    box-shadow: 0px 10px 40px -12px #ff69a0b7;
+    
+}
+
+.btn-login a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-info {
+    background-color: #553F81;
+}
+
+.container-info {
+    padding: 1px 20px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border-radius: 40px;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #ED3A85, #0B001A);
+}
+
+img {
+    padding: 3px 3px;
+    width: 70%;
+    height: 70%;
+}
+
+@media only screen and (max-width: 950px) {
+    .main-login {
+        width: 85%;
+    }
+}

@@ -1,0 +1,170 @@
+html{
+    height: 100vh;
+    background-color: black;
+}
+body{
+    margin: 0%;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex a{
+    text-decoration: none;
+    color: #fff;
+}
+.flex a:active{
+    transform: scale(1.5);
+    transition: .5s;
+}
+.flex a:hover{
+    color: #9b377a;
+    transition: 1s;
+}
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    transition: 1.5s;
+}
+header.rolagem{
+    background-color: #9b377a;
+    transition: 1.5s;
+    padding: 20px 4%;
+}
+header.rolagem a{
+    color: rgb(91, 19, 119)
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+header i:active{
+    color: #9b377a;
+}
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+header ul li:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+header ul li:active{
+    transform: scale(.8);
+    transition: .5s;
+
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url(background8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste esta propriedade conforme necessário */
+    flex-direction: column; /* Isso empilha os filhos verticalmente */
+}
+.btn-contato button{
+    width: 120%;
+    height: 40px;
+    border: 0;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.div1{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    border: none;
+}
+.div2 {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 30vw;
+    height: 50vh;
+    font-size:large;
+    border: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+}
+.topicos{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.topicos img{
+    width: 10%;
+    border-radius: 100%;
+}
+.topicos input{
+    padding-left: 30px;
+    border-radius: 20em;
+    border: none;
+    width: 20vw;
+    height: 3vh;
+    margin: 5%;
+    color: #9b377a;
+}
+.topicos button{
+    width: 25px;
+    height: 25px;
+    border-radius: 20em;
+    border: 0;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.topicos button:hover{
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+.div2 p{
+    margin-left: 10px;
+}
+.publication{
+    display: flex;
+    justify-content: left;
+    color: #9b377a;
+}
+.publication p{
+    margin: 20px;
+    font-size: large;
+}
+
+
+
