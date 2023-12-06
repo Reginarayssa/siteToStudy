@@ -32,7 +32,7 @@ p{
 
 .meuBotao {
     position: absolute;
-    bottom: 2%; 
+    bottom: 1%; 
     right: 4%; 
     background-color: #B90060;
     font-size: 25px;
@@ -91,6 +91,7 @@ label{
     margin-top: 0.5%;
     margin-bottom: 0%;
 }
+
 
 
 
