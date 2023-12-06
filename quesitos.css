@@ -91,10 +91,6 @@ label{
     margin-top: 0.5%;
     margin-bottom: 0%;
 }
-.container {
-    flex: 1;
-    overflow-y: auto; /* Adicione rolagem se o conteúdo exceder a altura máxima */
-}
 
 
 
