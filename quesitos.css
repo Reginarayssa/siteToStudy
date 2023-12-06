@@ -32,8 +32,8 @@ p{
 
 .meuBotao {
     position: absolute;
-    bottom: 1%; 
-    right: 4%; 
+    bottom: 6%;
+    margin-left:43%;
     background-color: #B90060;
     font-size: 25px;
     width: 180px;
