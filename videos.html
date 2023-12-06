@@ -1,100 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="videos,bioquimica,estudos">
-    <meta name="autora" content="Regina Rayssa">
-    <title> BuscarVídeos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="videos.css">
-</head>
-<body>
-        
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar Conteúdo" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-     </form>
-    <h1 class="titulo">Ache a sala de seu interesse</h1>
-    <h3 class="categoria">Categorias</h3>
-    <hr>
-    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-        Tudo
-      </button>
-      <button type="button" class="btn btn-secondary btn-bioquimica" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
-        Bioquímica
-      </button>
-      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-        Estequiometria
-      </button>
-      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
-        Radioatividade
-      </button>
-      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-        Equilíbrio Químico
-      </button>
 
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="imgProducao7.jpg" class="card-img-top" alt="..." height="200px">
-            <div class="card-body">
-              <h5 class="card-title">Produção de biocombustíveis</h5>
-              <p class="card-text"> Vamos entender mais sobre tal produção e discutir seus benefícios e malefícios</p>
-              <p class="ps"><strong>Líder da sala:</strong> João Gomes</p>
-              <p class="ps">45 pessoas assistindo </p>
-             <button class="custom-btn btn-1">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="videos,bioquimica,estudos">
+  <meta name="autora" content="Regina Rayssa">
+  <title> BuscarVídeos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="videos.css">
+</head>
+
+<body>
+
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Buscar Conteúdo" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+  </form>
+  <h1 class="titulo">Ache a sala de seu interesse</h1>
+  <h3 class="categoria">Categorias</h3>
+  <hr>
+  <div class="botoesConteudo">
+    <button> Tudo
+      <span></span>
+    </button>
+    <button> Bioquímica
+      <span></span>
+    </button>
+    <button> Estequiometria
+      <span></span>
+    </button>
+    <button> Radioatividade
+      <span></span>
+    </button>
+    <button> Bioenergética
+      <span></span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <div class="col">
+        <div class="card">
+          <img src="imgProducao7.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Produção de Biocombustíveis</h5>
+            <p class="card-text"> Vamos entender mais sobre tal produção e discutir seus benefícios e malefícios.</p>
+            <p class="ps"><strong>Líder da sala:</strong> João Gomes</p>
+            <p class="ps">45 pessoas assistindo </p>
+            <button class="custom-btn btn-1">
               <a href="chatVideo.html">Participar</a>
-              </button>
-            </div>
+            </button>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="imgDna7.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">DNA e suas características</h5>
-              <p class="card-text">Vídeo explicando como o DNA (ácido desoxirribonucleico) armazena a informação genética da grande maioria dos seres vivos"</p>
-              <p class="ps"><strong>Líder da sala:</strong> Gabriel Santana</p>
-              <p class="ps">30 pessoas assistindo </p>
-              <button class="custom-btn btn-1">
-                <a href="chatVideo.html">Participar</a>
-                </button>
-            </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="imgDna7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DNA e suas Características</h5>
+            <p class="card-text">Como o DNA (ácido desoxirribonucleico) armazena a informação genética.</p>
+            <p class="ps"><strong>Líder da sala:</strong> Gabriel Santana</p>
+            <p class="ps">30 pessoas assistindo </p>
+            <button class="custom-btn btn-1">
+              <a href="chatVideo.html">Participar</a>
+            </button>
           </div>
         </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="CineticaQuimica7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cinética Química</h5>
+            <p class="card-text">Entendendo sobre a área crucial que estuda sobre a velocidade das reações quimicas e os
+              fatores que influenciam. </p>
+            <p class="ps"><strong>Líder da sala:</strong> Gean Soares</p>
+            <p class="ps">35 pessoas assistindo </p>
+            <button class="custom-btn btn-1">
+              <a href="chatVideo.html">Participar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="imgLaboratorio7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">EPI's para Laboratório</h5>
+            <p class="card-text">Entenda a importância dos itens obrigatórios para a segurança dos colaboradores de
+              laboratórios de análises clínicas. </p>
+            <p class="ps"><strong>Líder da sala:</strong> Talita Maila</p>
+            <p class="ps">50 pessoas assistindo </p>
+            <button class="custom-btn btn-1">
+              <a href="chatVideo.html">Participar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <div class="col">
+        <div class="card">
+          <img src="BiodeProteina7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Biossíntese de Proteínas</h5>
+            <p class="card-text">Compreenda a importância de cada uma das três etapas deste importante processo que
+              ocorre nos seres vivos. </p>
+            <p class="ps"><strong>Líder da sala:</strong> Marcela Freitas</p>
+            <p class="ps">08 pessoas assistindo </p>
+            <button class="custom-btn btn-1">
+              <a href="chatVideo.html">Participar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="equilibrioQuímico7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Equilíbrio Químico</h5>
+            <p class="card-text">Entenda didáticamente sobre este fenômeno que ocorre em reações reversíveis entre
+              reagentes e produtos.</p>
+            <p class="ps"><strong>Líder da sala:</strong> Gustavo Garcia</p>
+            <p class="ps">55 pessoas assistindo </p>
+            <button class="custom-btn btn-1">
+              <a href="chatVideo.html">Participar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="metabolismoCentral7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Metabolismo Central</h5>
+            <p class="card-text"> Vídeo sobre este conjunto de vias metabólicas intrincadas que ocorrem no centro do
+              metabolismo celular</p>
+            <p class="ps"><strong>Líder da sala:</strong> Maria Júlia</p>
+            <p class="ps">80 pessoas assistindo </p>
+            <button class="custom-btn btn-1">
+              <a href="chatVideo.html">Participar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
         <div class="col">
           <div class="card">
-            <img src="imgCelula7.jpg" class="card-img-top" alt="..." width="200px">
+            <img src="compsicaoquimica7.jpg" class="card-img-top" alt="..." width="200px">
             <div class="card-body">
-              <h5 class="card-title">Composição química da célula</h5>
-              <p class="card-text">A composição química da célula é fundamental para o funcionamento adequado dos seres vivos.</p>
+              <h5 class="card-title">Composição da Célula</h5>
+              <p class="card-text">Compreendendo as substâncias orgânicas e inorgânicas que fazem parte da composição
+                química da célula.</p>
               <p class="ps"><strong>Líder da sala:</strong> Julia Gabrielly</p>
               <p class="ps">20 pessoas assistindo </p>
               <button class="custom-btn btn-1">
                 <a href="chatVideo.html">Participar</a>
-                </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imgLaboratorio7.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">EPI's Para laboratório</h5>
-              <p class="card-text">Entenda a importância dos itens obrigatórios para a segurança dos colaboradores de laboratórios de análises clínicas </p>
-              <p class="ps"><strong>Líder da sala:</strong> Talita Maila</p>
-              <p class="ps">50 pessoas assistindo </p>
-              <button class="custom-btn btn-1">
-                <a href="chatVideo.html">Participar</a>
-                </button>
+              </button>
             </div>
           </div>
         </div>
       </div>
-</body>
+    </div>
+  </div>
 </html>
