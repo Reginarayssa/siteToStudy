@@ -2,7 +2,7 @@ body {
     height: 100vh; 
     background-image: linear-gradient(
       45deg,
-     #ED3A85,
+      #9F4A6B,
      #0B001A
 );
     background-position: center;
@@ -16,26 +16,27 @@ h3 {
     font-size: 50px;
     color: white;
     margin-left:30px;
-    margin-bottom: 50px;
+    margin-top: 2%;
 }
 p{
     color: white;
-    position: fixed;
+    position: absolute;
     top:3%;
     right: 15px;
     font-size: 20px;
+    margin-top: 2%;
 }
 .usuaria{
-    position: fixed;
-    top:2.5%;
+    position: absolute;
+    top:6.5%;
     right: 225px;
 }
 
 .meuBotao {
-    position: fixed;
+    position: absolute;
     bottom: 20px; 
     right: 20px; 
-    background-color: #de186b;
+    background-color: #B90060;
     font-size: 25px;
     width: 180px;
     align-items: center;
@@ -49,7 +50,7 @@ p{
 
 /* edição dos 6 formulários */
 .form-select {
-background-color: #d63384;
+background-color: #B90060;
 color: white;
 border-radius: 40px;
 }
@@ -60,20 +61,20 @@ border-radius: 40px;
 }
 
 .datadeNascimento{
-    background-color:#d63384; 
+    background-color:#B90060; 
     color: white;
     border-radius: 20px;
     border: solid 1px white;
     display: flex; 
-    margin-top: 1px;
+    margin-top: 5%;
     height: 50px;
 }
 
 /* calendário */
 .label-nas {
-    margin-left: 20px; 
+    margin-left: 16px; 
     margin-top: 13px;
-    font-size: 12px;
+    font-size: 12px; 
 }
 
 /* nome "DATA DE NASCIMENTO */
