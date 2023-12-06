@@ -66,8 +66,6 @@ hr {
 .botoesConteudo {
   display: flex;
   gap: 60px;
-  /* Adicione um espaçamento desejado entre os botões */
-  margin-left: 65px;
 }
 
 button {
