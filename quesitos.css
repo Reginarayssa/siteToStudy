@@ -35,7 +35,7 @@ p {
     position: absolute;
     bottom: 6%;
     margin-left: 43%;
-    background-color: #ff00ff73;
+    background-color: #ff00e1b0;
     font-size: 25px;
     width: 180px;
     align-items: center;
@@ -49,7 +49,7 @@ p {
 
 /* edição dos 6 formulários */
 .form-select {
-    background-color: #ff00ff73;
+    background-color: #ff00e1b0;
     color: white;
     border-radius: 40px;
 }
@@ -59,7 +59,7 @@ p {
 }
 
 .datadeNascimento {
-    background-color: #ff00ff73;
+    background-color: #ff00e1b0;
     color: white;
     border-radius: 20px;
     border: solid 1px white;
