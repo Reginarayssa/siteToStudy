@@ -132,7 +132,6 @@ section.topo-do-site{
 section.topo-do-site.flex{
     align-items: center;
     justify-content: center;
-    gap: 90px;
 }
 
 .topo-do-site .txt-topo-site h1 {
@@ -155,7 +154,10 @@ section.topo-do-site.flex{
     position: absolute;
     bottom: 40px ;
     right: 0;
-    margin-right:4%;
+    width: 40%; 
+    padding-top: 30px;
+    margin-bottom: 35px;
+
 }
 
 .topo-do-site .btn-cadastro .bnt{
