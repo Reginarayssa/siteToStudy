@@ -1,40 +1,41 @@
 body {
-    height: 100vh; 
-    background-image: linear-gradient(
-      45deg,
-    #9F4A6B,
-     #0B001A
-);
+    height: 100vh;
+    background-image: linear-gradient(45deg,
+            #ED3A85, #0B001A);
+
     background-position: center;
     background-size: cover;
     margin: 0;
     padding: 0;
     margin-left: 30px;
 }
+
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     color: white;
-    margin-left:30px;
+    margin-left: 30px;
 }
-p{
+
+p {
     color: white;
     position: absolute;
-    top:3%;
+    top: 3%;
     right: 15px;
     font-size: 20px;
 }
-.usuaria{
+
+.usuaria {
     position: absolute;
-    top:2.5%;
+    top: 2.5%;
     right: 225px;
 }
 
 .meuBotao {
     position: absolute;
     bottom: 6%;
-    margin-left:43%;
-    background-color: #B90060;
+    margin-left: 43%;
+    background-color: #ff00ff73;
     font-size: 25px;
     width: 180px;
     align-items: center;
@@ -48,34 +49,34 @@ p{
 
 /* edição dos 6 formulários */
 .form-select {
-background-color: #B90060;
-color: white;
-border-radius: 40px;
+    background-color: #ff00ff73;
+    color: white;
+    border-radius: 40px;
 }
 
-.form-select{
+.form-select {
     font-size: 12px;
 }
 
-.datadeNascimento{
-    background-color:#B90060; 
+.datadeNascimento {
+    background-color: #ff00ff73;
     color: white;
     border-radius: 20px;
     border: solid 1px white;
-    display: flex; 
+    display: flex;
     margin-top: 3%;
     height: 50px;
 }
 
 /* calendário */
 .label-nas {
-    margin-left: 16px; 
+    margin-left: 16px;
     margin-top: 13px;
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 /* nome "DATA DE NASCIMENTO */
-label{
+label {
     margin-left: 20px;
     margin-top: 15px;
     font-size: 12px;
@@ -87,11 +88,7 @@ label{
     margin-bottom: 9%;
 }
 
-.ajusteUltimaLinha{
+.ajusteUltimaLinha {
     margin-top: 0.5%;
     margin-bottom: 0%;
 }
-
-
-
-
