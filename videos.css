@@ -27,9 +27,9 @@ body {
   height: 60px;
   margin-top: 2%;
   width: 49%;
-  margin-left: 23%;
+  margin-left: 15%; 
+  margin-right: 25%; 
 }
-
 
 .btn-outline-success {
   --bs-btn-color: black;
@@ -154,4 +154,10 @@ a {
 
 .custom-btn {
   background-color: #B90060;
+}
+
+.logo{
+color:#ED3A85;
+margin-top: 2.5%;
+margin-left: 2%;
 }
